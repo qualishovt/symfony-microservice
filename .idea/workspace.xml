@@ -4,42 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19f0cad2-0c31-41f8-b36f-234199e05573" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_9_4_23__12_04_PM.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/phpunit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/debug.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Filter/Modifier/DateRangeMultiplier.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Filter/Modifier/FixedPriceVoucher.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Filter/Modifier/PriceModifierInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ServiceTestCase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/LowestPriceFilterTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/PriceModifiersTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony-microservice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony-microservice.iml" afterDir="false" />
+    <list default="true" id="19f0cad2-0c31-41f8-b36f-234199e05573" name="Changes" comment="PriceMdifiers">
+      <change afterPath="$PROJECT_DIR$/src/Filter/Modifier/EvenItemsMultiplier.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Filter/Modifier/Factory/PriceModifierFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Filter/Modifier/Factory/PriceModifierFactoryInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DTO/LowestPriceEnquiry.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/LowestPriceEnquiry.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DTO/PromotionEnquiryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/PromotionEnquiryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Promotion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Promotion.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Filter/LowestPriceFilter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Filter/LowestPriceFilter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Filter/PromotionsFilterInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Filter/PromotionsFilterInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/PromotionRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/PromotionRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/Serializer/DTOSerializer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/Serializer/DTOSerializer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Filter/Modifier/DateRangeMultiplier.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Filter/Modifier/DateRangeMultiplier.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Filter/Modifier/FixedPriceVoucher.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Filter/Modifier/FixedPriceVoucher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Filter/Modifier/PriceModifierInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Filter/Modifier/PriceModifierInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/LowestPriceFilterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/LowestPriceFilterTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/PriceModifiersTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/PriceModifiersTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,12 +190,26 @@
       <workItem from="1693817888050" duration="923000" />
       <workItem from="1693818920745" duration="109000" />
       <workItem from="1693819698196" duration="667000" />
-      <workItem from="1693822810387" duration="11829000" />
+      <workItem from="1693822810387" duration="18430000" />
     </task>
+    <task id="LOCAL-00001" summary="PriceMdifiers">
+      <option name="closed" value="true" />
+      <created>1693837529881</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693837529882</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Promotions set up" />
+    <MESSAGE value="PriceMdifiers" />
+    <option name="LAST_COMMIT_MESSAGE" value="PriceMdifiers" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

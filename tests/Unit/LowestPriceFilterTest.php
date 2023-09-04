@@ -20,6 +20,8 @@ class LowestPriceFilterTest extends ServiceTestCase
         $enquiry = new LowestPriceEnquiry();
         $enquiry->setProduct($product);
         $enquiry->setQuantity(5);
+        $enquiry->setRequestDate('2022-11-27');
+        $enquiry->setVoucherCode('OU812');
 
         $promotions = $this->promotionsDataProvider();
 
@@ -49,7 +51,7 @@ class LowestPriceFilterTest extends ServiceTestCase
         $promotion2->setType('fixed_price_voucher');
 
         $promotion3 = new Promotion();
-        $promotion3->setName('Bгн щту пуе щту акуу');
+        $promotion3->setName('Buy one get one free');
         $promotion3->setAdjustment(0.5);
         $promotion3->setCriteria(['minimum_quantity' => 2]);
         $promotion3->setType('even_items_multiplier');
