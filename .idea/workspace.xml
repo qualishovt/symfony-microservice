@@ -4,21 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19f0cad2-0c31-41f8-b36f-234199e05573" name="Changes" comment="web request">
-      <change afterPath="$PROJECT_DIR$/src/Cache/PromotionCache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DTO/PriceEnquiryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Filter/PriceFilterInterface.php" afterDir="false" />
+    <list default="true" id="19f0cad2-0c31-41f8-b36f-234199e05573" name="Changes" comment="Redis setup">
+      <change afterPath="$PROJECT_DIR$/config/packages/validator.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Event/AfterDtoCreatedEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventListener/ExceptionListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventSubscriber/DtoSubscriber.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/ServiceException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/ServiceExceptionData.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/ValidationExceptionData.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/product/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/DtoSubscriberTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/symfony-microservice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony-microservice.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/cache.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/cache.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cache/PromotionCache.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cache/PromotionCache.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DTO/LowestPriceEnquiry.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/LowestPriceEnquiry.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DTO/PromotionEnquiryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/PromotionEnquiryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Filter/LowestPriceFilter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Filter/LowestPriceFilter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Filter/PromotionsFilterInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Filter/PromotionsFilterInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ProductRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ProductRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/Serializer/DTOSerializer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/Serializer/DTOSerializer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +143,11 @@
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
       <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/vendor/predis/predis" />
+      <path value="$PROJECT_DIR$/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/vendor/twig/extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bundle" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -144,23 +158,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;routes&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.PHP&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "routes",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "php.override.implement.member.chooser.php.doc": "NONE",
+    "settings.editor.selected.configurable": "editor.preferences.completion",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\8.1.4\htdocs\symfony-microservice\src\Filter" />
@@ -195,7 +209,7 @@
       <workItem from="1693818920745" duration="109000" />
       <workItem from="1693819698196" duration="667000" />
       <workItem from="1693822810387" duration="20696000" />
-      <workItem from="1693897843215" duration="3157000" />
+      <workItem from="1693897843215" duration="16916000" />
     </task>
     <task id="LOCAL-00001" summary="PriceMdifiers">
       <option name="closed" value="true" />
@@ -221,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693857725929</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Redis setup">
+      <option name="closed" value="true" />
+      <created>1693901628054</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693901628054</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +254,8 @@
     <MESSAGE value="PriceMdifiers" />
     <MESSAGE value="PriceModifiers" />
     <MESSAGE value="web request" />
-    <option name="LAST_COMMIT_MESSAGE" value="web request" />
+    <MESSAGE value="Redis setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redis setup" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
